@@ -9,3 +9,7 @@ output "subnets-ids" {
 output "sg-id" {
   value = aws_security_group.allow_all.id
 }
+
+output "instance_public_ips" {
+  value = aws_instance.webservers.*.public_ip
+}

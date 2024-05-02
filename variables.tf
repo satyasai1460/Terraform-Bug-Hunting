@@ -8,3 +8,4 @@ variable "environment" { type = string }
 variable "amis" { type = map(any) }
 variable "instance_type" { type = map(any) }
 variable "projectId" { type = string }
+variable "imagename" { type = string }
